@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6494E6A2-DFAC-46CE-9B57-2023F4DB7AE7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\Project3.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TabbedApplication.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Project3">
+        <MSBuild Projects="..\Project3.dproj"/>
+    </Target>
+    <Target Name="Project3:Clean">
+        <MSBuild Projects="..\Project3.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project3:Make">
+        <MSBuild Projects="..\Project3.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TabbedApplication">
+        <MSBuild Projects="TabbedApplication.dproj"/>
+    </Target>
+    <Target Name="TabbedApplication:Clean">
+        <MSBuild Projects="TabbedApplication.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TabbedApplication:Make">
+        <MSBuild Projects="TabbedApplication.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Project3;TabbedApplication"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Project3:Clean;TabbedApplication:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Project3:Make;TabbedApplication:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
