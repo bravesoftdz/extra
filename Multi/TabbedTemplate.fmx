@@ -3,7 +3,7 @@ object TabbedForm: TTabbedForm
   Top = 0
   Caption = 'TabbedForm'
   ClientHeight = 680
-  ClientWidth = 1093
+  ClientWidth = 1051
   FormFactor.Width = 1440
   FormFactor.Height = 900
   FormFactor.Devices = [Desktop]
@@ -11,13 +11,13 @@ object TabbedForm: TTabbedForm
   DesignerMasterStyle = 0
   object HeaderToolBar: TToolBar
     Anchors = []
-    Size.Width = 1093.000000000000000000
+    Size.Width = 1051.000000000000000000
     Size.Height = 48.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object ToolBarLabel: TLabel
       Align = Contents
-      Size.Width = 1093.000000000000000000
+      Size.Width = 1051.000000000000000000
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'toollabel'
@@ -28,11 +28,11 @@ object TabbedForm: TTabbedForm
   object TabControl1: TTabControl
     Align = Client
     FullSize = True
-    Size.Width = 1093.000000000000000000
+    Size.Width = 1051.000000000000000000
     Size.Height = 632.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
-    TabIndex = 3
+    TabIndex = 1
     TabOrder = 1
     TabPosition = PlatformDefault
     object TabItem1: TTabItem
@@ -40,7 +40,7 @@ object TabbedForm: TTabbedForm
         item
         end>
       IsSelected = False
-      Size.Width = 273.000000000000000000
+      Size.Width = 350.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabitemtoprated'
@@ -51,8 +51,8 @@ object TabbedForm: TTabbedForm
       CustomIcon = <
         item
         end>
-      IsSelected = False
-      Size.Width = 274.000000000000000000
+      IsSelected = True
+      Size.Width = 351.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabitemcontacts'
@@ -64,29 +64,16 @@ object TabbedForm: TTabbedForm
         item
         end>
       IsSelected = False
-      Size.Width = 273.000000000000000000
+      Size.Width = 348.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
-      StyleLookup = 'tabitemrecent'
       TabOrder = 0
-      Text = 'TabItem3'
-    end
-    object TabItem4: TTabItem
-      CustomIcon = <
-        item
-        end>
-      IsSelected = True
-      Size.Width = 271.000000000000000000
-      Size.Height = 49.000000000000000000
-      Size.PlatformDefault = False
-      StyleLookup = 'tabitemmostrecent'
-      TabOrder = 0
-      Text = 'TabItem4'
+      Text = #927#929#915#913#925#937#931#919
     end
   end
   object GestureManager1: TGestureManager
-    Left = 352
-    Top = 56
+    Left = 176
+    Top = 160
     GestureData = <
       item
         Control = Owner

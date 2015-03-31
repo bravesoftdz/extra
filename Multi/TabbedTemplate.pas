@@ -14,9 +14,8 @@ type
     TabControl1: TTabControl;
     TabItem1: TTabItem;
     TabItem2: TTabItem;
-    TabItem3: TTabItem;
-    TabItem4: TTabItem;
     GestureManager1: TGestureManager;
+    TabItem3: TTabItem;
     procedure FormCreate(Sender: TObject);
     procedure FormGesture(Sender: TObject; const EventInfo: TGestureEventInfo;
       var Handled: Boolean);
